@@ -1,0 +1,20 @@
+problem 3
+
+function checkArr(str1,str2){
+  var output="";
+  for(i=0;i<str1.length;i++){
+  for(j=0;j<str2.length;j++){
+    if(str2[j]==str1[i]&&str2[j+1]==str1[i+1]){
+      output=output+str1[i];
+      continue;
+    }
+  } 
+  }
+if(output==str2){
+  return true;
+}else{
+  return false;
+}
+}
+console.log(checkArr("masai","sai"))
+console.log(checkArr("masai","asi"))

@@ -1,0 +1,18 @@
+problem 2
+
+function genderCount(a){
+  var name=["Pratik","Rajat","Aarti","Rakhi","Rani"];
+  var gender=["m","m","f","f","f",]
+
+
+  for(i=0;i<name.length;i++){
+    var names="";
+for(j=0;j<gender.length;j++){
+  if(gender[j]==a)
+  {
+    names+=name[j]+" ";
+  }
+
+}return names;
+  }
+}console.log(genderCount("f"))

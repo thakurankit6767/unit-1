@@ -1,0 +1,68 @@
+problem 1
+
+var object ={
+  calculatePerimeter:function(r)
+  {
+    var per=2*3.14*r;
+    return per;
+  },
+   
+   calculateArea:function(r)
+   {
+  var area=3.14*r**2;
+  return area;
+}
+
+}
+console.log(object.calculatePerimeter(10)+" "+object.calculateArea(10))
+
+
+
+
+
+
+problem 2
+
+
+function videogameShop(a){
+  var name=["A","B","C","D"];
+  var category=["z","x","n","b"];
+  var price=["10","12","14","16"];
+  for(var j=0;j<name.length;j++){
+    var names="";
+    for(k=0;k<category.length;k++){
+      if(category[k]==a){
+        names+=name[k]+" "+name+" "+ price;
+      }
+    }return names
+  }
+  
+}console.log(videogameShop("z","x","n","b"))
+
+
+
+
+
+
+problem 3
+
+
+function checkarray(str1,str2){
+  var output="";
+  for(i=0;i<str1.length;i++){
+    for(j=0;j<str2.length;j++){
+    if(str2[j]==str1[i]&&str2[j+1]==str1[i+1]){
+      output+=str1[i];
+      continue;
+    }
+  }
+}
+if(output==str2){
+  return true;
+}else{
+  return false;
+}
+}
+console.log(checkarray("masaischool","hool"))
+console.log(checkarray("masaischool","aas"))
+
